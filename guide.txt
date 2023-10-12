@@ -1,0 +1,12 @@
+## If you want to run service use this command 
+dsc --replicas=5 --name myservice --network=mynetwork -p 8080:8080 mydockerhubname/myrepo:mytag
+
+## If you want to run stack use this command 
+dstc docker-compose.yaml mystackname
+
+## If you want to create an overlay network use this command 
+dnc --driver=overlay mynetworkname
+
+## If you want to create an overlay network which use can attach it to containers or services on worker node use this command 
+dnc --driver=overlay --attachable mynetworkname
+
